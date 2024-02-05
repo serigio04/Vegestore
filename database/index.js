@@ -17,7 +17,7 @@ const db_product = [
         id: 3, 
         name: "pineapple",
         stored: 1000,
-        price: 18
+        price: 12
     },
     {
         id: 4, 
@@ -41,6 +41,7 @@ const db_purchase = [
         producto_id: 2,
         date: new Date(2024,1,1),
         quantity: 100,
+        price: 12,
         totalPrice: 1200
     }
 ];
