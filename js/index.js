@@ -7,7 +7,23 @@ const getCash = () => {
 };
 
 const buildTable = () => {
-    const Table = document.getElementById("")
+    let table = document.getElementById("productTable");
+    let lista = table.getElementsByTagName("tbody")[0];
+    lista.innerHTML = "";
+
+    product.getAllProduct().forEach(element => {
+        let row = document.createElement("tr");
+        row.innerHTML = `
+            <th scope="row">${element.id}</th>
+            <td>${element.name}</td>
+            <td>${element.stored}</td>
+            <td>${element.price}</td>
+            <td></td>
+            <td></td>
+        `
+        lista.appendChild(row);
+    });
 }
 
-addEventListener('load', getCash)
+addEventListener('load', getCash);
+addEventListener('load', buildTable);
