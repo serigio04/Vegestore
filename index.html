@@ -43,6 +43,27 @@
                             
                         </tbody>
                     </table>
+                    <button type="button" id="addProductBtn" class="btn btn-success">Añadir producto</button>
+                    <form action="" id="addProduct" style="display: none;">
+                        <div class="form-group">
+                            <label for="np_name">Nombre</label>
+                            <input type="text" class="form-control" id="np_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="np_stored">Existencia (kg)</label>
+                            <input type="text" class="form-control" id="np_stored">
+                        </div>
+                        <div class="form-group">
+                            <label for="np_p_price">Precio a la compra</label>
+                            <input type="text" class="form-control" id="np_p_price">
+                        </div>
+                        <div class="form-group">
+                            <label for="np_s_price">Precio a la venta</label>
+                            <input type="text" class="form-control" id="np_s_price">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+                        <button type="button" class="btn btn-danger" id="cancelNewProd">Cancelar</button>
+                    </form>
                 </div>
             </div>
         </section>

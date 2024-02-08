@@ -19,7 +19,7 @@ const _cashier = (start) => {
     }
 };
 
-const _productos = (start) => {
+const _products = (start) => {
     let products = start;
     return{
         sale: (id, amount) => {
