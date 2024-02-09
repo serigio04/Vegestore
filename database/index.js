@@ -1,4 +1,4 @@
-const db_cash = 1000;
+const db_cash = 10000;
 
 const db_product = [
     {
